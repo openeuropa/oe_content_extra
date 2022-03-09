@@ -6,36 +6,9 @@ It is primarily designed to be used with the [OpenEuropa Whitelabel](https://git
 
 ## Development setup
 
-You can build the development site by running the following steps:
+### Using LAMP stack or similar
 
-* Install the Composer dependencies:
-
-```bash
-composer install
-```
-
-A post command hook (`drupal:site-setup`) is triggered automatically after `composer install`.
-This will symlink the module in the proper directory within the test site and perform token substitution in test configuration files such as `phpunit.xml.dist`.
-
-**Please note:** project files and directories are symlinked within the test site by using the
-[OpenEuropa Task Runner's Drupal project symlink](https://github.com/openeuropa/task-runner-drupal-project-symlink) command.
-
-If you add a new file or directory in the root of the project, you need to re-run `drupal:site-setup` in order to make
-sure they are be correctly symlinked.
-
-If you don't want to re-run a full site setup for that, you can simply run:
-
-```
-$ ./vendor/bin/run drupal:symlink-project
-```
-
-* Install test site by running:
-
-```bash
-./vendor/bin/run drupal:site-install
-```
-
-The development site web root should be available in the `build` directory.
+This is not officially supported. You are on your own.
 
 ### Using Docker Compose
 
