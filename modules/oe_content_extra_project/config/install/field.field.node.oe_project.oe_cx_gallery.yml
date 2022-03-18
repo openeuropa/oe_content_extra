@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_gallery
+    - field.storage.node.oe_cx_gallery
     - media.type.image
     - media.type.remote_video
     - node.type.oe_project
@@ -12,8 +12,8 @@ third_party_settings:
   composite_reference:
     composite: false
     composite_revisions: false
-id: node.oe_project.field_gallery
-field_name: field_gallery
+id: node.oe_project.oe_cx_gallery
+field_name: oe_cx_gallery
 entity_type: node
 bundle: oe_project
 label: Gallery

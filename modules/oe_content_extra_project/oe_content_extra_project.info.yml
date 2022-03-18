@@ -11,13 +11,13 @@ dependencies:
 
 config_devel:
   install:
-    - field.field.node.oe_project.field_achievements_and_milestone
-    - field.field.node.oe_project.field_gallery
-    - field.field.node.oe_project.field_impacts
-    - field.field.node.oe_project.field_objective
-    - field.field.node.oe_project.oe_project_lead_contributors
-    - field.storage.node.field_achievements_and_milestone
-    - field.storage.node.field_gallery
-    - field.storage.node.field_impacts
-    - field.storage.node.field_objective
-    - field.storage.node.oe_project_lead_contributors
+    - field.field.node.oe_project.oe_cx_achievements_and_milestone
+    - field.field.node.oe_project.oe_cx_gallery
+    - field.field.node.oe_project.oe_cx_impacts
+    - field.field.node.oe_project.oe_cx_objective
+    - field.field.node.oe_project.oe_cx_project_lead_contributors
+    - field.storage.node.oe_cx_achievements_and_milestone
+    - field.storage.node.oe_cx_gallery
+    - field.storage.node.oe_cx_impacts
+    - field.storage.node.oe_cx_objective
+    - field.storage.node.oe_cx_project_lead_contributors

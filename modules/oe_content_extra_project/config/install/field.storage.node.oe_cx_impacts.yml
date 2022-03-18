@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - text
-id: node.field_impacts
-field_name: field_impacts
+id: node.oe_cx_impacts
+field_name: oe_cx_impacts
 entity_type: node
 type: text_long
 settings: {  }

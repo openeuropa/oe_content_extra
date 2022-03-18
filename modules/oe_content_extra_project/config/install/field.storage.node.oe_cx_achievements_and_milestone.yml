@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - text
-id: node.field_objective
-field_name: field_objective
+id: node.oe_cx_achievements_and_milestone
+field_name: oe_cx_achievements_and_milestone
 entity_type: node
 type: text_long
 settings: {  }

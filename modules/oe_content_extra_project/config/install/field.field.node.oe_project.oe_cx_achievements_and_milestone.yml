@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_objective
+    - field.storage.node.oe_cx_achievements_and_milestone
     - node.type.oe_project
   module:
     - text
-id: node.oe_project.field_objective
-field_name: field_objective
+id: node.oe_project.oe_cx_achievements_and_milestone
+field_name: oe_cx_achievements_and_milestone
 entity_type: node
 bundle: oe_project
-label: Objective
+label: 'Achievements and milestones'
 description: ''
 required: false
 translatable: true

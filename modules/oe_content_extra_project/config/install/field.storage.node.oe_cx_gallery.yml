@@ -4,8 +4,8 @@ dependencies:
   module:
     - media
     - node
-id: node.field_gallery
-field_name: field_gallery
+id: node.oe_cx_gallery
+field_name: oe_cx_gallery
 entity_type: node
 type: entity_reference
 settings:

@@ -5,8 +5,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - oe_content_entity_organisation
-id: node.oe_project_lead_contributors
-field_name: oe_project_lead_contributors
+id: node.oe_cx_project_lead_contributors
+field_name: oe_cx_project_lead_contributors
 entity_type: node
 type: entity_reference_revisions
 settings:
