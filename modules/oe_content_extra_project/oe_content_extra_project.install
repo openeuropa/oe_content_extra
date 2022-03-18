@@ -7,7 +7,7 @@
 
 declare(strict_types = 1);
 
-use Drupal\oe_content_extra_project\ConfigImporter;
+use Drupal\oe_content_extra\ConfigImporter;
 
 /**
  * Implements hook_install().
