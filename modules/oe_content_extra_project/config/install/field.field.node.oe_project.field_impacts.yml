@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_impacts
+    - node.type.oe_project
+  module:
+    - text
+id: node.oe_project.field_impacts
+field_name: field_impacts
+entity_type: node
+bundle: oe_project
+label: Impacts
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

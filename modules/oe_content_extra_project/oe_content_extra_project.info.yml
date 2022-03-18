@@ -1,0 +1,23 @@
+name: OpenEuropa Content Extra Project
+description: Contains the EC Content Extra Project fields.
+package: OpenEuropa
+
+type: module
+core_version_requirement: ^9.2
+dependencies:
+  - oe_content_extra:oe_content_extra
+  - oe_content:oe_content_project
+  - drupal:path
+
+config_devel:
+  install:
+    - field.field.node.oe_project.field_achievements_and_milestone
+    - field.field.node.oe_project.field_gallery
+    - field.field.node.oe_project.field_impacts
+    - field.field.node.oe_project.field_objective
+    - field.field.node.oe_project.oe_project_lead_contributors
+    - field.storage.node.field_achievements_and_milestone
+    - field.storage.node.field_gallery
+    - field.storage.node.field_impacts
+    - field.storage.node.field_objective
+    - field.storage.node.oe_project_lead_contributors
