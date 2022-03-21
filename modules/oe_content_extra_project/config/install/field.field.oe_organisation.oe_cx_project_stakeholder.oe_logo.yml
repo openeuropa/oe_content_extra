@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.oe_organisation.oe_logo
+    - media.type.image
+    - oe_content_entity_organisation.oe_organisation_type.oe_cx_project_stakeholder
+  module:
+    - composite_reference
+third_party_settings:
+  composite_reference:
+    composite: false
+    composite_revisions: false
+id: oe_organisation.oe_cx_project_stakeholder.oe_logo
+field_name: oe_logo
+entity_type: oe_organisation
+bundle: oe_cx_project_stakeholder
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
