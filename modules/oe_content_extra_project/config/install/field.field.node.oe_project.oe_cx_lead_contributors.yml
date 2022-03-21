@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.oe_cx_project_lead_contributors
+    - field.storage.node.oe_cx_lead_contributors
     - node.type.oe_project
     - oe_content_entity_organisation.oe_organisation_type.oe_stakeholder
   module:
@@ -11,8 +11,8 @@ dependencies:
 third_party_settings:
   composite_reference:
     composite: true
-id: node.oe_project.oe_cx_project_lead_contributors
-field_name: oe_cx_project_lead_contributors
+id: node.oe_project.oe_cx_lead_contributors
+field_name: oe_cx_lead_contributors
 entity_type: node
 bundle: oe_project
 label: 'Lead contributors'

@@ -125,14 +125,14 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
       ],
       'oe_cx_impacts' => 'Test impacts text',
       'oe_cx_objective' => 'Test objective text',
-      'oe_cx_project_lead_contributors' => $organisation,
+      'oe_cx_lead_contributors' => $organisation,
     ];
 
     // Create a page node with multiple revisions.
     $entity_type_manager = $this->container->get('entity_type.manager')->getStorage('node');
     $entity_type_manager->resetCache();
     $node = $entity_type_manager->create($values);
-    $node_organisation = Organisation::load($node->get('oe_cx_project_lead_contributors')->target_id);
+    $node_organisation = Organisation::load($node->get('oe_cx_lead_contributors')->target_id);
 
     // Assert the content extra field values.
     $this->assertEquals('My node title', $node->label());
@@ -147,7 +147,7 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
     $this->assertEquals('text_long', $node->get('oe_cx_impacts')->getFieldDefinition()->getType());
     $this->assertEquals('text_long', $node->get('oe_cx_objective')->getFieldDefinition()->getType());
     $this->assertEquals('text_long', $node->get('oe_cx_achievements_and_milestone')->getFieldDefinition()->getType());
-    $this->assertEquals('entity_reference_revisions', $node->get('oe_cx_project_lead_contributors')->getFieldDefinition()->getType());
+    $this->assertEquals('entity_reference_revisions', $node->get('oe_cx_lead_contributors')->getFieldDefinition()->getType());
   }
 
 }
