@@ -26,7 +26,7 @@ settings:
   handler: 'default:oe_organisation'
   handler_settings:
     target_bundles:
-      oe_stakeholder: oe_stakeholder
+      oe_cx_project_stakeholder: oe_cx_project_stakeholder
     sort:
       field: _none
       direction: ASC
