@@ -125,7 +125,6 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
       'oe_cx_lead_contributors' => $organisation,
     ];
 
-    // Create a page node and get the organisation.
     $entity_type_manager = $this->container->get('entity_type.manager')->getStorage('node');
     $node = $entity_type_manager->create($values);
     $node_organisation = Organisation::load($node->get('oe_cx_lead_contributors')->target_id);
