@@ -161,8 +161,8 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
     $this->assertEquals(self::ORGANISATION_BUNDLE, key($project_participants));
     $this->assertEquals(self::ORGANISATION_BUNDLE, key($lead_contributors_bundle));
 
-    // Contribution field.
-    $this->assertEquals($organisation->get('oe_cx_contribution_budget')->value, $node_organisation->get('oe_cx_contribution_budget')->value);
+    // New contribution field.
+    $this->assertEquals('19.9', $node_organisation->get('oe_cx_contribution_budget')->value);
     $this->assertEquals('float', $node_organisation->get('oe_cx_contribution_budget')->getFieldDefinition()->getType());
   }
 
