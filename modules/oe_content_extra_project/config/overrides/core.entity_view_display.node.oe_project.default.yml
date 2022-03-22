@@ -17,7 +17,7 @@ dependencies:
     - field.field.node.oe_project.oe_project_coordinators
     - field.field.node.oe_project.oe_project_dates
     - field.field.node.oe_project.oe_project_funding_programme
-    - field.field.node.oe_project.oe_cx_project_lead_contributors
+    - field.field.node.oe_project.oe_cx_lead_contributors
     - field.field.node.oe_project.oe_project_locations
     - field.field.node.oe_project.oe_project_participants
     - field.field.node.oe_project.oe_project_result_files
@@ -215,7 +215,7 @@ content:
     third_party_settings: {  }
     weight: 13
     region: content
-  oe_cx_project_lead_contributors:
+  oe_cx_lead_contributors:
     type: entity_reference_revisions_entity_view
     label: above
     settings:

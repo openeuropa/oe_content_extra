@@ -8,18 +8,16 @@ use Drupal\file\Entity\File;
 use Drupal\media\Entity\Media;
 use Drupal\oe_content_entity_organisation\Entity\Organisation;
 use Drupal\Tests\media\Traits\MediaTypeCreationTrait;
-use Drupal\Tests\node\Traits\NodeCreationTrait;
 use Drupal\Tests\sparql_entity_storage\Kernel\SparqlKernelTestBase;
 use Drupal\Tests\TestFileCreationTrait;
 
 /**
- * Tests the content type base field definitions.
+ * Tests the content extra fields.
  */
 class ContentExtraFieldsTest extends SparqlKernelTestBase {
 
   use MediaTypeCreationTrait;
   use TestFileCreationTrait;
-  use NodeCreationTrait;
 
   /**
    * {@inheritdoc}
@@ -111,7 +109,6 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
     ]);
     $organisation->save();
 
-    // Map the values.
     $values = [
       'type' => 'oe_project',
       'title' => 'My node title',
@@ -128,9 +125,8 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
       'oe_cx_lead_contributors' => $organisation,
     ];
 
-    // Create a page node with multiple revisions.
+    // Create a page node and get the organisation.
     $entity_type_manager = $this->container->get('entity_type.manager')->getStorage('node');
-    $entity_type_manager->resetCache();
     $node = $entity_type_manager->create($values);
     $node_organisation = Organisation::load($node->get('oe_cx_lead_contributors')->target_id);
 
@@ -140,7 +136,7 @@ class ContentExtraFieldsTest extends SparqlKernelTestBase {
     $this->assertEquals($values['oe_cx_impacts'], $node->get('oe_cx_impacts')->value);
     $this->assertEquals($values['oe_cx_objective'], $node->get('oe_cx_objective')->value);
     $this->assertEquals($values['oe_cx_achievements_and_milestone'], $node->get('oe_cx_achievements_and_milestone')->value);
-    $this->assertEquals($organisation->getName(), $node_organisation->getName());
+    $this->assertEquals('Team Lead', $node_organisation->getName());
 
     // Assert the content extra field config.
     $this->assertEquals('entity_reference', $node->get('oe_cx_gallery')->getFieldDefinition()->getType());

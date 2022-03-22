@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.oe_cx_gallery
+    - media.type.av_portal_photo
+    - media.type.av_portal_video
     - media.type.image
     - media.type.remote_video
     - node.type.oe_project
@@ -26,6 +28,8 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
+      av_portal_photo: av_portal_photo
+      av_portal_video: av_portal_video
       image: image
       remote_video: remote_video
     sort:
