@@ -5,8 +5,8 @@ package: OpenEuropa
 type: module
 core_version_requirement: ^9.2
 dependencies:
-  - oe_content:oe_content_project
   - drupal:path
+  - oe_content:oe_content_project
   - oe_media_avportal:oe_media_avportal
 
 config_devel:
