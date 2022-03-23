@@ -3,7 +3,7 @@
 The module enhances the 'Project' content type from `oe_content_project`.
 
 It adds the following fields:
-- Achievements and milestone.
+- Achievements and milestones.
 - Gallery.
 - Impacts.
 - Lead contributors.
