@@ -6,7 +6,7 @@ It adds the following fields:
 - Achievements and milestone.
 - Gallery.
 - Impacts.
-- Objective.
 - Lead contributors.
+- Objective.
 
 Content extra project module overrides the form display and view display in entity project as well.
