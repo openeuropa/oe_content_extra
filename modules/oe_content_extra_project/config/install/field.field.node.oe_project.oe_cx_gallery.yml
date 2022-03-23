@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_cx_gallery
+    - media.type.av_portal_photo
+    - media.type.av_portal_video
+    - media.type.image
+    - media.type.remote_video
+    - node.type.oe_project
+  module:
+    - composite_reference
+third_party_settings:
+  composite_reference:
+    composite: false
+    composite_revisions: false
+id: node.oe_project.oe_cx_gallery
+field_name: oe_cx_gallery
+entity_type: node
+bundle: oe_project
+label: Gallery
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      av_portal_photo: av_portal_photo
+      av_portal_video: av_portal_video
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

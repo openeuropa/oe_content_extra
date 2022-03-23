@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.oe_cx_lead_contributors
+    - node.type.oe_project
+    - oe_content_entity_organisation.oe_organisation_type.oe_stakeholder
+  module:
+    - composite_reference
+    - entity_reference_revisions
+third_party_settings:
+  composite_reference:
+    composite: true
+    composite_revisions: false
+id: node.oe_project.oe_cx_lead_contributors
+field_name: oe_cx_lead_contributors
+entity_type: node
+bundle: oe_project
+label: 'Lead contributors'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:oe_organisation'
+  handler_settings:
+    target_bundles:
+      oe_stakeholder: oe_stakeholder
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

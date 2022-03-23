@@ -27,6 +27,7 @@ drupal:
     # Enable the modules.
     - "./vendor/bin/drush en config_devel -y"
     - "./vendor/bin/drush en oe_content_extra -y"
+    - "./vendor/bin/drush en oe_content_extra_project -y"
     - "./vendor/bin/drush cr"
   settings:
     settings:
