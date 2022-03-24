@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.node.oe_cx_lead_contributors
     - node.type.oe_project
-    - oe_content_entity_organisation.oe_organisation_type.oe_stakeholder
+    - oe_content_entity_organisation.oe_organisation_type.oe_cx_project_stakeholder
   module:
     - composite_reference
     - entity_reference_revisions
