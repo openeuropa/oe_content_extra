@@ -102,6 +102,22 @@ class ContentExtraFieldsTest extends BrowserTestBase {
     $this->assertStringContainsString('image-test.png', $image_element->getAttribute('src'));
     $assert_session->pageTextContains('Lead contributors');
     $assert_session->pageTextContains('Team lead');
+
+    // Fill the new field for oe_cx_project_stakeholder budget.
+    $this->drupalGet('node/1/edit');
+    $page->pressButton('Add new participant');
+    $assert_session->fieldExists('Contribution to the budget');
+    $page->fillField('Name', 'Developer participant');
+    $page->fillField('oe_project_participants[form][0][oe_cx_contribution_budget][0][value]', '19.9');
+    $page->pressButton('Edit');
+    $page->fillField('oe_cx_lead_contributors[form][inline_entity_form][entities][0][form][oe_cx_contribution_budget][0][value]', '22.3');
+    $page->pressButton('Save');
+
+    // Assert new field on oe_cx_project_stakeholder budget.
+    $assert_session->pageTextContains('Developer participant');
+    $assert_session->pageTextContains('Contribution to the budget');
+    $assert_session->pageTextContains('19.9');
+    $assert_session->pageTextContains('22.3');
   }
 
 }

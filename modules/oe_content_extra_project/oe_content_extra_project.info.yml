@@ -11,13 +11,23 @@ dependencies:
 
 config_devel:
   install:
+    - core.entity_form_display.oe_organisation.oe_cx_project_stakeholder.default
+    - core.entity_view_display.oe_organisation.oe_cx_project_stakeholder.default
     - field.field.node.oe_project.oe_cx_achievements_and_milestone
     - field.field.node.oe_project.oe_cx_gallery
     - field.field.node.oe_project.oe_cx_impacts
     - field.field.node.oe_project.oe_cx_lead_contributors
     - field.field.node.oe_project.oe_cx_objective
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_acronym
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_address
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_contact_url
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_cx_contribution_budget
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_logo
+    - field.field.oe_organisation.oe_cx_project_stakeholder.oe_website
     - field.storage.node.oe_cx_achievements_and_milestone
     - field.storage.node.oe_cx_gallery
     - field.storage.node.oe_cx_impacts
     - field.storage.node.oe_cx_lead_contributors
     - field.storage.node.oe_cx_objective
+    - field.storage.oe_organisation.oe_cx_contribution_budget
+    - oe_content_entity_organisation.oe_organisation_type.oe_cx_project_stakeholder
