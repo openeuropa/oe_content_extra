@@ -21,11 +21,12 @@
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
         "drupal/file_link": "^2.0.4",
+        "drupal/inline_entity_form": "^1.0-rc12",
         "drupal/typed_link": "^2.0",
         "drush/drush": "^10.3",
         "egulias/email-validator": "^2.1.22 || ^3.0",
         "openeuropa/code-review": "^1.6 || ^2.0",
-        "openeuropa/oe_content": "^2.8.0",
+        "openeuropa/oe_content": "3.x-dev",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0.0-beta5",
         "phpspec/prophecy-phpunit": "^2"
     },
@@ -66,7 +67,8 @@
         "_readme": [
             "Explicit requirement for egulias/email-validator due to https://www.drupal.org/project/drupal/issues/3061074#comment-14300579. It can be removed when Drupal core 9.2 support is droppped.",
             "Explicit requirement for drupal/file_link due to https://www.drupal.org/project/file_link/issues/3147517. It can be removed when oe_media requires version 2.0.4 or above.",
-            "Explicit requirement for amphp/parallel-functions because release 1.1.0 causes serialisation errors."
+            "Explicit requirement for amphp/parallel-functions because release 1.1.0 causes serialisation errors.",
+            "Explicit minimum version requirement of drupal/inline_entity_form due to failing patch in lower versions. To be removed once oe_media required the same minimum version."
         ]
     },
     "config": {
