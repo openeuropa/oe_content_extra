@@ -1,8 +1,16 @@
 # Change Log
 
-## [1.0.0-alpha1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-alpha1) (2022-06-20)
+## [1.0.0-beta1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-beta1) (2022-08-09)
+[Full Changelog](https://github.com/openeuropa/oe_content_extra/compare/1.0.0-alpha1...1.0.0-beta1)
+
 **Merged pull requests:**
 
+- OEL-1893: Move to oe\_content version 3. [\#8](https://github.com/openeuropa/oe_content_extra/pull/8) ([drishu](https://github.com/drishu))
+
+## [1.0.0-alpha1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-alpha1) (2022-06-21)
+**Merged pull requests:**
+
+- OEL-1727: Prepare release 1.0.0-alpha1. [\#7](https://github.com/openeuropa/oe_content_extra/pull/7) ([drishu](https://github.com/drishu))
 - OEL-1668: Constrain prophecy-phpunit to version 2. [\#6](https://github.com/openeuropa/oe_content_extra/pull/6) ([drishu](https://github.com/drishu))
 - OEL-1293: Epic Project. [\#5](https://github.com/openeuropa/oe_content_extra/pull/5) ([Maxfire](https://github.com/Maxfire))
 - OEL-1296: Create the project stakeholder bundle. [\#4](https://github.com/openeuropa/oe_content_extra/pull/4) ([Maxfire](https://github.com/Maxfire))

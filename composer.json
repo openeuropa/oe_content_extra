@@ -26,7 +26,7 @@
         "drush/drush": "^10.3",
         "egulias/email-validator": "^2.1.22 || ^3.0",
         "openeuropa/code-review": "^1.6 || ^2.0",
-        "openeuropa/oe_content": "3.x-dev",
+        "openeuropa/oe_content": "^3.0.0-alpha4",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0.0-beta5",
         "phpspec/prophecy-phpunit": "^2"
     },
