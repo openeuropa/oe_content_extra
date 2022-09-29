@@ -1,10 +1,18 @@
 # Change Log
 
+## [1.0.0-beta2](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-beta2) (2022-09-29)
+[Full Changelog](https://github.com/openeuropa/oe_content_extra/compare/1.0.0-beta1...1.0.0-beta2)
+
+**Merged pull requests:**
+
+- OEL-1910: Drupal 9.4 support. [\#10](https://github.com/openeuropa/oe_content_extra/pull/10) ([drishu](https://github.com/drishu))
+
 ## [1.0.0-beta1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-beta1) (2022-08-09)
 [Full Changelog](https://github.com/openeuropa/oe_content_extra/compare/1.0.0-alpha1...1.0.0-beta1)
 
 **Merged pull requests:**
 
+- Prepare release 1.0.0-beta1. [\#9](https://github.com/openeuropa/oe_content_extra/pull/9) ([drishu](https://github.com/drishu))
 - OEL-1893: Move to oe\_content version 3. [\#8](https://github.com/openeuropa/oe_content_extra/pull/8) ([drishu](https://github.com/drishu))
 
 ## [1.0.0-alpha1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-alpha1) (2022-06-21)
