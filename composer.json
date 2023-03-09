@@ -19,7 +19,6 @@
         "drupal/description_list_field": "^1.0@alpha",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
-        "drupal/inline_entity_form": "^1.0-rc12",
         "drupal/typed_link": "^2.0",
         "drush/drush": "^11.1",
         "openeuropa/code-review": "^2.0.0-alpha6",
@@ -60,10 +59,7 @@
             "locations": {
                 "web-root": "./build"
             }
-        },
-        "_readme": [
-            "Explicit minimum version requirement of drupal/inline_entity_form due to failing patch in lower versions. To be removed once oe_media required the same minimum version."
-        ]
+        }
     },
     "config": {
         "sort-packages": true,
