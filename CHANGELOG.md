@@ -1,10 +1,18 @@
 # Change Log
 
+## [1.0.0](https://github.com/openeuropa/oe_content_extra/tree/1.0.0) (2023-03-10)
+[Full Changelog](https://github.com/openeuropa/oe_content_extra/compare/1.0.0-beta2...1.0.0)
+
+**Merged pull requests:**
+
+- OEL-2115: Drop PHP 7.4 and add 8.1. [\#12](https://github.com/openeuropa/oe_content_extra/pull/12) ([brummbar](https://github.com/brummbar))
+
 ## [1.0.0-beta2](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-beta2) (2022-09-29)
 [Full Changelog](https://github.com/openeuropa/oe_content_extra/compare/1.0.0-beta1...1.0.0-beta2)
 
 **Merged pull requests:**
 
+- Prepare release 1.0.0-beta2. [\#11](https://github.com/openeuropa/oe_content_extra/pull/11) ([drishu](https://github.com/drishu))
 - OEL-1910: Drupal 9.4 support. [\#10](https://github.com/openeuropa/oe_content_extra/pull/10) ([drishu](https://github.com/drishu))
 
 ## [1.0.0-beta1](https://github.com/openeuropa/oe_content_extra/tree/1.0.0-beta1) (2022-08-09)
