@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "drupal/core": "^9.3"
     },
     "require-dev": {
@@ -19,12 +19,11 @@
         "drupal/description_list_field": "^1.0@alpha",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
-        "drupal/inline_entity_form": "^1.0-rc12",
         "drupal/typed_link": "^2.0",
-        "drush/drush": "^10.3",
-        "openeuropa/code-review": "^2.0",
-        "openeuropa/oe_content": "^3.0.0-alpha4",
-        "openeuropa/task-runner-drupal-project-symlink": "^1.0.0-beta5",
+        "drush/drush": "^11.1",
+        "openeuropa/code-review": "^2.0.0-alpha6",
+        "openeuropa/oe_content": "^3.0.0-alpha8",
+        "openeuropa/task-runner-drupal-project-symlink": "^1.0.0-beta6",
         "phpspec/prophecy-phpunit": "^2"
     },
     "scripts": {
@@ -60,10 +59,7 @@
             "locations": {
                 "web-root": "./build"
             }
-        },
-        "_readme": [
-            "Explicit minimum version requirement of drupal/inline_entity_form due to failing patch in lower versions. To be removed once oe_media required the same minimum version."
-        ]
+        }
     },
     "config": {
         "sort-packages": true,

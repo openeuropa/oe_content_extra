@@ -24,36 +24,20 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
   sparql:
-    # Temporarily fix the triple store version to avoid "Provisional data" terms.
-    # @todo: Use the latest release once a solution for the "Provisional data" terms is implemented.
-    image: registry.fpfis.eu/openeuropa/triple-store-dev:1.14.0
+    image: registry.fpfis.eu/openeuropa/triple-store-dev
     pull: true
     environment:
       - SPARQL_UPDATE=true
       - DBA_PASSWORD=dba
 
 pipeline:
-  composer-install-highest:
+  composer-install:
     group: prepare
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     volumes:
-      - /cache:/cache
+      - /cache/${DRONE_REPO_NAME}:/cache
     commands:
-      - composer install --ansi --no-progress
-    when:
-      matrix:
-        COMPOSER_BOUNDARY: highest
-
-  composer-update-lowest:
-    group: prepare
-    image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
-    volumes:
-      - /cache:/cache
-    commands:
-      - composer update --prefer-lowest --prefer-stable --ansi --no-progress
-    when:
-      matrix:
-        COMPOSER_BOUNDARY: lowest
+      - composer require drupal/core:~${CORE_VERSION} drupal/core-composer-scaffold:~${CORE_VERSION} drupal/core-dev:~${CORE_VERSION} --update-with-all-dependencies --ansi --no-progress --no-interaction
 
   site-install:
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
@@ -81,9 +65,9 @@ pipeline:
       status: failure
 
 matrix:
-  COMPOSER_BOUNDARY:
-    - lowest
-    - highest
+  CORE_VERSION:
+    - 9.4.0
+    - 9.5.0
   PHP_VERSION:
-    - 7.4
     - 8.0
+    - 8.1
