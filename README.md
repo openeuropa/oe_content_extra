@@ -46,7 +46,7 @@ However, if you'd like to daemonize it, you have to add the flag `-d`:
 
 ```bash
 docker-compose up -d
-
+```
 ##### Drupal 10.1
 
 For Drupal 10.1, the drupal/core patch needs to be overridden.
