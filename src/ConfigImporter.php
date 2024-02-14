@@ -4,9 +4,9 @@ declare(strict_types = 1);
 
 namespace Drupal\oe_content_extra;
 
+use Drupal\Component\Utility\Crypt;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Config\FileStorage;
-use Drupal\Component\Utility\Crypt;
 use Drupal\Core\Config\StorageInterface;
 
 /**
