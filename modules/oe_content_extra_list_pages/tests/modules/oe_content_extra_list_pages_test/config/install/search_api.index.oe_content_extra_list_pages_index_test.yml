@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.oe_content_extra_list_pages_search_server_test
+  module:
+    - oe_list_pages
+    - search_api
+    - node
+third_party_settings:
+  oe_list_pages:
+    lists_pages_index: true
+id: oe_content_extra_list_pages_index_test
+name: oe_content_extra_list_pages_index_test
+description: ''
+read_only: false
+field_settings: {  }
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: oe_content_extra_list_pages_search_server_test

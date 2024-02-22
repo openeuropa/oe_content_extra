@@ -1,0 +1,18 @@
+name: 'Openeuropa Content Extra List pages'
+type: module
+description: 'Contains the EC Content Extra List pages fields.'
+package: Openeuropa
+core_version_requirement: ^10
+dependencies:
+  - oe_list_pages:oe_list_page_content_type
+  - oe_content:oe_content
+  - oe_content:oe_content_featured_media_field
+  - oe_media_avportal:oe_media_avportal
+
+config_devel:
+  install:
+    - field.field.node.oe_list_page.oe_featured_media
+    - field.field.node.oe_list_page.oe_summary
+  optional:
+    - core.entity_form_display.node.oe_list_page.default
+    - core.entity_view_display.node.oe_list_page.default

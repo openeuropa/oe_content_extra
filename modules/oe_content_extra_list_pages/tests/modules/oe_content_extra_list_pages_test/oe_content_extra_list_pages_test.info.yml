@@ -1,0 +1,9 @@
+name: OpenEuropa Content Extra List Pages Test
+type: module
+description: The test module for OE Content Extra List Pages. Provides Index and content type.
+package: OpenEuropa
+core_version_requirement: ^10
+hidden: true
+dependencies:
+  - oe_content_extra:oe_content_extra_list_pages
+  - search_api:search_api_db
