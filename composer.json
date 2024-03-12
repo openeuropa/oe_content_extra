@@ -44,8 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Drupal\\Tests\\oe_content_extra_project\\": "./modules/oe_content_extra_project/tests/src/",
-            "Drupal\\Tests\\oe_content_extra_list_pages\\": "./modules/oe_content_extra_list_pages/tests/src/"
+            "Drupal\\Tests\\oe_content_extra\\": "./tests/src"
         }
     },
     "extra": {
