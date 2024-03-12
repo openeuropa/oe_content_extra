@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\Tests\oe_content_extra\Functional;
+namespace Drupal\Tests\oe_content_extra_project\Functional;
 
 use Drupal\file\Entity\File;
 use Drupal\media\Entity\Media;
@@ -12,9 +12,9 @@ use Drupal\Tests\sparql_entity_storage\Traits\SparqlConnectionTrait;
 use Drupal\Tests\TestFileCreationTrait;
 
 /**
- * Tests the content extra fields.
+ * Tests the Project content extra fields.
  */
-class ContentExtraFieldsTest extends BrowserTestBase {
+class FieldsTest extends BrowserTestBase {
 
   use MediaTypeCreationTrait;
   use SparqlConnectionTrait;

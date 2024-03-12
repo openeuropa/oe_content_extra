@@ -23,6 +23,7 @@
         "drush/drush": "^12.4",
         "openeuropa/code-review": "^2.0.0-alpha6",
         "openeuropa/oe_content": "^3",
+        "openeuropa/oe_list_pages": "^1.7",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0.0-beta6",
         "phpspec/prophecy-phpunit": "^2"
     },
