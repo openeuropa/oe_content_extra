@@ -19,7 +19,7 @@ services:
       - DOCUMENT_ROOT=/test/oe_content_extra
       - COMPOSERVER=--2
   mysql:
-    image: registry.fpfis.eu/fpfis/sql:percona-5.7
+    image: git.fpfis.tech.ec.europa.eu/fpfis/dependency_proxy/containers/percona:5.7
     command: --innodb-log-file-size=1G --max_allowed_packet=1G --innodb-buffer-pool-size=512M --wait_timeout=3000 --net_write_timeout=3000 --log_error_verbosity=3
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
@@ -37,13 +37,12 @@ pipeline:
     volumes:
       - /cache:/cache
     commands:
+      # Ignore the patch for 10.2.x.
       - >
-        composer config --merge --json "extra.patches.drupal/core" '{"https://www.drupal.org/project/drupal/issues/2230909": "https://www.drupal.org/files/issues/2022-07-26/2230909-269.patch"}'
-      - >
-        composer config --merge --json "extra.patches-ignore.openeuropa/oe_content" '{"drupal/core": {"Drupal 10.2.x only - see README.md for 10.1.x - https://www.drupal.org/project/drupal/issues/2230909": "https://www.drupal.org/files/issues/2023-12-21/2230909-309.patch"}}'
+        composer config --merge --json "extra.patches-ignore.drupal/media_avportal" '{"drupal/remote_stream_wrapper": {"Drupal 10.3.x only - see media_avportal/README.md for 10.2.x - https://www.drupal.org/project/remote_stream_wrapper/issues/3437974": "https://www.drupal.org/files/issues/2024-06-21/drupal_10_3_deliver_signature_change-3437974-2_0_0-18.patch"}}'
     when:
       matrix:
-        CORE_VERSION: "10.1.0"
+        CORE_VERSION: "10.2.0"
 
   composer-install:
     group: prepare
@@ -81,11 +80,11 @@ pipeline:
 
 matrix:
   include:
-    - CORE_VERSION: 10.1.0
+    - CORE_VERSION: 10.2.0
       PHP_VERSION: 8.1
-    - CORE_VERSION: 10.1.0
+    - CORE_VERSION: 10.2.0
       PHP_VERSION: 8.2
-    - CORE_VERSION: 10.2.0
+    - CORE_VERSION: 10.3.0
       PHP_VERSION: 8.1
-    - CORE_VERSION: 10.2.0
+    - CORE_VERSION: 10.3.0
       PHP_VERSION: 8.2
