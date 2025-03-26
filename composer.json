@@ -57,10 +57,6 @@
                     "reference": "5e9eb8d290f78f69464ab01ed374439992985811"
                 }
             }
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/openeuropa/code-review-drupal.git"
         }
     ],
     "autoload": {
