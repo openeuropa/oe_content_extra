@@ -22,7 +22,7 @@
         "drupal/typed_link": "^2.0.1",
         "drush/drush": "^12.4 || ^13",
         "openeuropa/code-review-drupal": "^1.0.0-alpha",
-        "openeuropa/oe_content": "^4.8",
+        "openeuropa/oe_content": "^4.11",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0"
     },
     "scripts": {
