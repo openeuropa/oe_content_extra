@@ -17,13 +17,12 @@
         "drupal/core-composer-scaffold": "^10 || ^11",
         "drupal/core-dev": "^10 || ^11",
         "drupal/description_list_field": "^1.0.0-alpha5",
-        "drupal/entity_browser": "~2.13.0",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/field_group": "^3.2",
         "drupal/typed_link": "^2.0.1",
         "drush/drush": "^12.4 || ^13",
         "openeuropa/code-review-drupal": "^1.0.0-alpha",
-        "openeuropa/oe_content": "^4.8",
+        "openeuropa/oe_content": "^4.11",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0"
     },
     "scripts": {
@@ -49,13 +48,6 @@
     "extra": {
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
-        "patches-ignore": {
-            "openeuropa/oe_content": {
-                "drupal/field_group": {
-                    "https://www.drupal.org/project/field_group/issues/2787179": "https://www.drupal.org/files/issues/2023-04-07/2787179-highlight-html5-validation-85.patch"
-                }
-            }
-        },
         "installer-paths": {
             "build/core": ["type:drupal-core"],
             "build/profiles/contrib/{$name}": ["type:drupal-profile"],
