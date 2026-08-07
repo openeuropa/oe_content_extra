@@ -22,6 +22,15 @@ class ContentExtraFieldsTest extends BrowserTestBase {
 
   /**
    * {@inheritdoc}
+   *
+   * The 'testing' profile overrides the body field storage to 'text_long'
+   * since Drupal 11.4, which is incompatible with oe_content's
+   * 'text_with_summary' body field.
+   */
+  protected $profile = 'minimal';
+
+  /**
+   * {@inheritdoc}
    */
   protected $defaultTheme = 'stark';
 
@@ -98,7 +107,7 @@ class ContentExtraFieldsTest extends BrowserTestBase {
     $assert_session->pageTextContains('Achievements and milestones');
     $assert_session->pageTextContains('Text Achievements and milestones');
     $assert_session->pageTextContains('Gallery');
-    $image_element = $this->assertSession()->elementExists('css', 'img');
+    $image_element = $this->assertSession()->elementExists('css', 'article img');
     $this->assertStringContainsString('image-test.png', $image_element->getAttribute('src'));
     $assert_session->pageTextContains('Lead contributors');
     $assert_session->pageTextContains('Team lead');
