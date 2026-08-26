@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.3",
         "drupal/core": "^10 || ^11"
     },
     "require-dev": {
@@ -22,7 +22,7 @@
         "drupal/typed_link": "^2.0.1",
         "drush/drush": "^12.4 || ^13",
         "openeuropa/code-review-drupal": "^1.0.0-alpha",
-        "openeuropa/oe_content": "^4.11",
+        "openeuropa/oe_content": "^4.15",
         "openeuropa/task-runner-drupal-project-symlink": "^1.0"
     },
     "scripts": {
